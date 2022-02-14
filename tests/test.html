@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <header>
+      <section>
+        <div>
+          <p id="p1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem dignissimos quasi iure optio quis, at a illo. Sit
+            quae natus molestiae illum cupiditate, quia asperiores tenetur
+            veritatis, quidem accusantium aperiam distinctio nesciunt laborum
+            molestias rem itaque commodi nihil consequatur odit placeat
+            quisquam! Quis aliquid impedit magnam odit, provident veritatis
+            dolore.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <video
+            src="Learn CSS Media Query In 7 Minutes.mp4"
+            width="35%"
+            controls
+          ></video>
+        </div>
+      </section>
+
+      <section>
+        <h2>FORMULAIRES</h2>
+
+        <div>
+          <h4>Types : texte/password/e-mail</h4>
+          <!-- type text/password -->
+          <form method="post" action="traitement.php">
+            <p>
+              <label for="pseudo"> Votre Pseudo : </label>
+              <input
+                type="text"
+                name="pseudo"
+                id="pseudo"
+                placeholder="Ex: M@teo21"
+              />
+              <br />
+              <br />
+
+              <label for="pass">Votre Mot De Passe : </label>
+              <input type="password" name="pass" id="pass" placeholder="****" />
+              <br />
+              <br />
+
+              <label for="e_mail">Votre Adresse e-mail</label>
+              <input
+                type="e-mail"
+                name="e_mail"
+                id="e_mail"
+                placeholder="mateo@gmail.com"
+              />
+            </p>
+          </form>
+        </div>
+
+        <div>
+          <h4>Une URL</h4>
+          <!-- type URL -->
+          <form method="post" action="traitement.php">
+            <p>
+              <label for="url">Entrez ici l'URL : </label>
+              <input
+                type="url"
+                name="url"
+                id="url"
+                placeholder="https//www.google.com"
+              />
+            </p>
+          </form>
+        </div>
+
+        <div>
+          <h4>Un numéro de téléphone</h4>
+          <!-- un numéro de téléphone -->
+          <form method="post" action="traitement.php">
+            <p>
+              <label for="téléphone">Votre n° de téléphone</label>
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="+261 34 44 206 01"
+              />
+            </p>
+          </form>
+        </div>
+
+        <div>
+          <h4>Un Nombre</h4>
+          <!-- un nombre -->
+          <form method="post" action="traitement.php">
+            <p>
+              <label for="age">Votre âge</label>
+              <input
+                type="number"
+                name="number"
+                id="number"
+                min="18"
+                max="60"
+                step="1"
+                placeholder="18"
+              />
+            </p>
+          </form>
+        </div>
+
+        <div>
+          <h4>Un Curseur</h4>
+          <!-- Permet de selectionner un nombre avec un curseur -->
+          <form method="post" action="traitement.php">
+            <p>
+              <label for="curseur"></label>
+              <input
+                type="range"
+                name="range"
+                id="range"
+                min="10"
+                max="100"
+                step="1"
+              />
+            </p>
+          </form>
+        </div>
+
+        <div>
+          <h4>Des couleurs</h4>
+          <!-- type couleur-->
+          <form method="post" action="traitement.php">
+            <p>
+              <label for="color">Votre couleur préféré</label>
+              <input type="color" name="color" id="color" />
+            </p>
+          </form>
+        </div>
+
+        <div>
+          <h4>
+            Dates/heures/semaines/mois/ date et heure avec gestion du décalage
+            horaire/ date et heure sans gestion
+          </h4>
+          <!-- type Date ( datetime(avec gestion) # datetime-local(sans gestion))-->
+          <form method="post" action="traitement.php">
+            <p>
+              <label for="Date">Date d'aujourd'hui</label>
+              <input type="date" name="date" id="date" />
+              <br />
+              <br />
+              <label for="time">L'heure</label>
+              <input type="time" name="time" id="time" />
+              <br />
+              <br />
+              <label for="week">La semaine</label>
+              <input type="week" name="week" id="week" />
+              <br />
+              <br />
+              <label for="month">Le mois</label>
+              <input type="month" name="month" id="month" />
+              <br />
+              <br />
+              <label for="datetime">"Datetime"</label>
+              <input type="datetime" name="datetime" id="datetime" />
+              <br />
+              <br />
+              <label for="datetime-local">"Datetime-Local"</label>
+              <input
+                type="datetime-local"
+                name="datetime-local"
+                id="datetime-local"
+              />
+            </p>
+          </form>
+        </div>
+
+        <div>
+          <h4>Une Zone de texte</h4>
+          <!-- zone de texte -->
+          <form method="post" action="traitement.php">
+            <p>
+              <label for="ameliorer"
+                ><em><b>Comment pourrais-je améliorer mon site???</b></em>
+              </label>
+              <br />
+              <!-- cols: NOMBRE DE COLONNES -->
+              <!-- rows: NOMBRE DE LIGNES -->
+              <textarea name="ameiorer" id="ameliorer" cols="50" rows="10">
+Votre avis compte beaucoup afin d'améliorer notre site!</textarea
+              >
+            </p>
+          </form>
+        </div>
+
+        <div>
+          <h4>Search bar</h4>
+          <!-- Recherche -->
+          <form method="post" action="traitement.php">
+            <label for="search"></label>
+            <input type="search" name="search" id="search" />
+          </form>
+        </div>
+      </section>
+
+      <section>
+        <h3>LES CASES à COCHER</h3>
+
+        <div>
+          <form method="post" action="traitement.php">
+            <p>
+              Cochez les aliments que vous souhaiteriez manger : <br />
+              <input type="checkbox" name="frites" id="frites" />
+              <label for="frites">Frites</label>
+              <br />
+              <input type="checkbox" name="steak" id="steak" />
+              <label for="Steak">Steak</label>
+              <br />
+              <input type="checkbox" name="Salades" id="Salades" />
+              <label for="salades">salades</label>
+              <br />
+              <input type="checkbox" name="humberger" id="humberger" />
+              <label for="humberger">humberger</label>
+              <br />
+              <input type="checkbox" name="humhuitres" id="humhuitres" />
+              <label for="huitres">huitres</label><br />
+            </p>
+          </form>
+        </div>
+      </section>
+      <section>
+        <h3>LES ZONES D'OPTIONS</h3>
+
+        <div>
+          <form method="post" action="traitement.php">
+            <p>
+              <input type="radio" name="" value="" id="moins15" />
+              <label for="pays"></label>
+            </p>
+          </form>
+        </div>
+      </section>
+    </header>
+  </body>
+</html>
