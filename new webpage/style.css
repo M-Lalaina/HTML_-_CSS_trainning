@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: url(images/1.0.jpg) no-repeat bottom;
+  background-size: cover;
+}
+header .main {
+  margin: 0;
+  padding: 10px;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.5);
+  color: rgb(233, 241, 241);
+  display: flex;
+  justify-content: space-between;
+}
+.photo {
+  height: 150px;
+}
+img {
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid #19746b;
+}
+.about_me {
+  padding: 10px;
+  border-radius: 20px;
+}
+#user_name {
+  margin: 0;
+}
+#hobby {
+  margin: 5px;
+}
+fieldset {
+  flex: 2;
+}
+fieldset legend {
+  color: rgb(93, 160, 160);
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+li {
+  margin: 15px;
+  padding: 10px;
+  position: relative;
+}
+li ::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #19746b;
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  transition: 0.4s;
+}
+li:hover {
+  background: rgba(109, 109, 109, 0.7);
+  border-radius: 10px;
+}
+li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
