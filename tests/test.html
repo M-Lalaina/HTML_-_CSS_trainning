@@ -243,8 +243,44 @@ Votre avis compte beaucoup afin d'améliorer notre site!</textarea
         <div>
           <form method="post" action="traitement.php">
             <p>
-              <input type="radio" name="" value="" id="moins15" />
-              <label for="pays"></label>
+              <input type="radio" name="age" value="moins15" id="moins15" />
+              <label for="moins15">Moins de 15 ans</label>
+              <br />
+              <input
+                type="radio"
+                name="age"
+                value="medium15-25"
+                id="medium15-25"
+              />
+              <label for="medium15-25">15-25ans</label>
+              <br />
+              <input
+                type="radio"
+                name="age"
+                value="medium25-35"
+                id="medium25-35"
+              />
+              <label for="medium25-35">25-35ans</label>
+              <br />
+              <input
+                type="radio"
+                name="age"
+                value="medium35-45"
+                id="medium35-45"
+              />
+              <label for="medium35-45">35-45ans</label>
+              <br />
+              <input
+                type="radio"
+                name="age"
+                value="medium45-55"
+                id="medium45-55"
+              />
+              <label for="medium45-55">45-55ans</label>
+              <br />
+              <input type="radio" name="age" value="Plus50" id="Plus50" />
+              <label for="Plus50">Encore plus vieux que ça?!</label>
+              <br />
             </p>
           </form>
         </div>
