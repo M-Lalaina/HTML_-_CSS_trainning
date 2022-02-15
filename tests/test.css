@@ -1,3 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(4, 75, 106);
+  color: white;
+}
+header {
+  padding: 1%;
+  color: rgb(18, 52, 86);
+  background-color: rgb(53, 155, 175);
+}
+header div {
+  position: relative;
+  margin: 0;
+}
+header nav {
+  width: 25%;
+  position: absolute;
+  right: 0;
+  top: -15px;
+}
+header ul > li {
+  font-size: 1.2em;
+  display: inline;
+  padding: 0 5px;
+}
+header ul li a {
+  padding: 16px;
+  color: white;
+  text-decoration: none;
+}
+header ul li a:hover {
+  transition: 0.5s;
+  transform: scale(2);
+  color: black;
+  background-color: beige;
+}
+
 #p1 {
   width: 200px;
   height: 200px;
