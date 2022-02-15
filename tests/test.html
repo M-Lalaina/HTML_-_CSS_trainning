@@ -9,282 +9,375 @@
   </head>
   <body>
     <header>
-      <section>
-        <div>
-          <p id="p1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem dignissimos quasi iure optio quis, at a illo. Sit
-            quae natus molestiae illum cupiditate, quia asperiores tenetur
-            veritatis, quidem accusantium aperiam distinctio nesciunt laborum
-            molestias rem itaque commodi nihil consequatur odit placeat
-            quisquam! Quis aliquid impedit magnam odit, provident veritatis
-            dolore.
+      <div><em><strong style="font-size: 1.3em;">""...HTML & CSS trainning project..."</strong></em>
+        <nav>
+          <ul>
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+      </div>
+      </nav>
+    </header>
+
+    <section>
+      <div>
+        <p id="p1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem dignissimos quasi iure optio quis, at a illo. Sit quae
+          natus molestiae illum cupiditate, quia asperiores tenetur veritatis,
+          quidem accusantium aperiam distinctio nesciunt laborum molestias rem
+          itaque commodi nihil consequatur odit placeat quisquam! Quis aliquid
+          impedit magnam odit, provident veritatis dolore.🔥
+        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <video
+          src="Learn CSS Media Query In 7 Minutes.mp4"
+          width="35%"
+          controls
+        ></video>
+      </div>
+    </section>
+
+    <section>
+      <h2>FORMULAIRES</h2>
+
+      <div>
+        <h3>Types : texte/password/e-mail</h3>
+        <!-- type text/password -->
+        <form method="post" action="traitement.php">
+          <p>
+            <label for="pseudo"> Votre Pseudo : </label>
+            <input
+              type="text"
+              name="pseudo"
+              id="pseudo"
+              placeholder="Ex: M@teo21"
+            />
+            <br />
+            <br />
+
+            <label for="pass">Votre Mot De Passe : </label>
+            <input type="password" name="pass" id="pass" placeholder="****" />
+            <br />
+            <br />
+
+            <label for="e_mail">Votre Adresse e-mail</label>
+            <input
+              type="e-mail"
+              name="e_mail"
+              id="e_mail"
+              placeholder="mateo@gmail.com"
+            />
           </p>
-        </div>
-      </section>
-      <section>
-        <div>
-          <video
-            src="Learn CSS Media Query In 7 Minutes.mp4"
-            width="35%"
-            controls
-          ></video>
-        </div>
-      </section>
+        </form>
+      </div>
 
-      <section>
-        <h2>FORMULAIRES</h2>
+      <div>
+        <h3>Une URL</h3>
+        <!-- type URL -->
+        <form method="post" action="traitement.php">
+          <p>
+            <label for="url">Entrez ici l'URL : </label>
+            <input
+              type="url"
+              name="url"
+              id="url"
+              placeholder="https//www.google.com"
+            />
+          </p>
+        </form>
+      </div>
 
+      <div>
+        <h3>Un numéro de téléphone</h3>
+        <!-- un numéro de téléphone -->
+        <form method="post" action="traitement.php">
+          <p>
+            <label for="téléphone">Votre n° de téléphone</label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="+261 34 44 206 01"
+            />
+          </p>
+        </form>
+      </div>
+
+      <div>
+        <h3>Un Nombre</h3>
+        <!-- un nombre -->
+        <form method="post" action="traitement.php">
+          <p>
+            <label for="age">Votre âge</label>
+            <input
+              type="number"
+              name="number"
+              id="number"
+              min="18"
+              max="60"
+              step="1"
+              placeholder="18"
+            />
+          </p>
+        </form>
+      </div>
+
+      <div>
+        <h3>Un Curseur</h3>
+        <!-- Permet de selectionner un nombre avec un curseur -->
+        <form method="post" action="traitement.php">
+          <p>
+            <label for="curseur"></label>
+            <input
+              type="range"
+              name="range"
+              id="range"
+              min="10"
+              max="100"
+              step="1"
+            />
+          </p>
+        </form>
+      </div>
+
+      <div>
+        <h3>Des couleurs</h3>
+        <!-- type couleur-->
+        <form method="post" action="traitement.php">
+          <p>
+            <label for="color">Votre couleur préféré</label>
+            <input type="color" name="color" id="color" />
+          </p>
+        </form>
+      </div>
+
+      <div>
+        <h3>
+          Dates/heures/semaines/mois/ date et heure avec gestion du décalage
+          horaire/ date et heure sans gestion
+        </h3>
+        <!-- type Date ( datetime(avec gestion) # datetime-local(sans gestion))-->
+        <form method="post" action="traitement.php">
+          <p>
+            <label for="Date">Date d'aujourd'hui</label>
+            <input type="date" name="date" id="date" />
+            <br />
+            <br />
+            <label for="time">L'heure</label>
+            <input type="time" name="time" id="time" />
+            <br />
+            <br />
+            <label for="week">La semaine</label>
+            <input type="week" name="week" id="week" />
+            <br />
+            <br />
+            <label for="month">Le mois</label>
+            <input type="month" name="month" id="month" />
+            <br />
+            <br />
+            <label for="datetime">"Datetime"</label>
+            <input type="datetime" name="datetime" id="datetime" />
+            <br />
+            <br />
+            <label for="datetime-local">"Datetime-Local"</label>
+            <input
+              type="datetime-local"
+              name="datetime-local"
+              id="datetime-local"
+            />
+          </p>
+        </form>
+      </div>
+      <div>
         <div>
-          <h4>Types : texte/password/e-mail</h4>
-          <!-- type text/password -->
+          <h3>Zone de texte</h3>
+          <!-- text area -->
           <form method="post" action="traitement.php">
             <p>
-              <label for="pseudo"> Votre Pseudo : </label>
-              <input
-                type="text"
-                name="pseudo"
-                id="pseudo"
-                placeholder="Ex: M@teo21"
-              />
-              <br />
-              <br />
-
-              <label for="pass">Votre Mot De Passe : </label>
-              <input type="password" name="pass" id="pass" placeholder="****" />
-              <br />
-              <br />
-
-              <label for="e_mail">Votre Adresse e-mail</label>
-              <input
-                type="e-mail"
-                name="e_mail"
-                id="e_mail"
-                placeholder="mateo@gmail.com"
-              />
+              <em><b>Comment améliorer mon site???</b></em>
             </p>
-          </form>
-        </div>
-
-        <div>
-          <h4>Une URL</h4>
-          <!-- type URL -->
-          <form method="post" action="traitement.php">
             <p>
-              <label for="url">Entrez ici l'URL : </label>
-              <input
-                type="url"
-                name="url"
-                id="url"
-                placeholder="https//www.google.com"
-              />
-            </p>
-          </form>
-        </div>
-
-        <div>
-          <h4>Un numéro de téléphone</h4>
-          <!-- un numéro de téléphone -->
-          <form method="post" action="traitement.php">
-            <p>
-              <label for="téléphone">Votre n° de téléphone</label>
-              <input
-                type="tel"
-                name="tel"
-                id="tel"
-                placeholder="+261 34 44 206 01"
-              />
-            </p>
-          </form>
-        </div>
-
-        <div>
-          <h4>Un Nombre</h4>
-          <!-- un nombre -->
-          <form method="post" action="traitement.php">
-            <p>
-              <label for="age">Votre âge</label>
-              <input
-                type="number"
-                name="number"
-                id="number"
-                min="18"
-                max="60"
-                step="1"
-                placeholder="18"
-              />
-            </p>
-          </form>
-        </div>
-
-        <div>
-          <h4>Un Curseur</h4>
-          <!-- Permet de selectionner un nombre avec un curseur -->
-          <form method="post" action="traitement.php">
-            <p>
-              <label for="curseur"></label>
-              <input
-                type="range"
-                name="range"
-                id="range"
-                min="10"
-                max="100"
-                step="1"
-              />
-            </p>
-          </form>
-        </div>
-
-        <div>
-          <h4>Des couleurs</h4>
-          <!-- type couleur-->
-          <form method="post" action="traitement.php">
-            <p>
-              <label for="color">Votre couleur préféré</label>
-              <input type="color" name="color" id="color" />
-            </p>
-          </form>
-        </div>
-
-        <div>
-          <h4>
-            Dates/heures/semaines/mois/ date et heure avec gestion du décalage
-            horaire/ date et heure sans gestion
-          </h4>
-          <!-- type Date ( datetime(avec gestion) # datetime-local(sans gestion))-->
-          <form method="post" action="traitement.php">
-            <p>
-              <label for="Date">Date d'aujourd'hui</label>
-              <input type="date" name="date" id="date" />
-              <br />
-              <br />
-              <label for="time">L'heure</label>
-              <input type="time" name="time" id="time" />
-              <br />
-              <br />
-              <label for="week">La semaine</label>
-              <input type="week" name="week" id="week" />
-              <br />
-              <br />
-              <label for="month">Le mois</label>
-              <input type="month" name="month" id="month" />
-              <br />
-              <br />
-              <label for="datetime">"Datetime"</label>
-              <input type="datetime" name="datetime" id="datetime" />
-              <br />
-              <br />
-              <label for="datetime-local">"Datetime-Local"</label>
-              <input
-                type="datetime-local"
-                name="datetime-local"
-                id="datetime-local"
-              />
-            </p>
-          </form>
-        </div>
-
-        <div>
-          <h4>Une Zone de texte</h4>
-          <!-- zone de texte -->
-          <form method="post" action="traitement.php">
-            <p>
-              <label for="ameliorer"
-                ><em><b>Comment pourrais-je améliorer mon site???</b></em>
-              </label>
-              <br />
-              <!-- cols: NOMBRE DE COLONNES -->
-              <!-- rows: NOMBRE DE LIGNES -->
-              <textarea name="ameiorer" id="ameliorer" cols="50" rows="10">
-Votre avis compte beaucoup afin d'améliorer notre site!</textarea
+              <textarea name="améliorer" id="améliorer" cols="50" rows="10">
+Dites moi ici vos commentaire pour améliorer mon site...</textarea
               >
             </p>
           </form>
         </div>
-
-        <div>
-          <h4>Search bar</h4>
-          <!-- Recherche -->
-          <form method="post" action="traitement.php">
+      </div>
+      <div>
+        <h3>Search bar</h3>
+        <!-- Recherche -->
+        <form method="post" action="traitement.php">
+          <p>
             <label for="search"></label>
             <input type="search" name="search" id="search" />
-          </form>
-        </div>
-      </section>
+          </p>
+        </form>
+      </div>
+    </section>
 
-      <section>
-        <h3>LES CASES à COCHER</h3>
+    <section>
+      <h3>Cases à cocher</h3>
 
-        <div>
-          <form method="post" action="traitement.php">
-            <p>
-              Cochez les aliments que vous souhaiteriez manger : <br />
-              <input type="checkbox" name="frites" id="frites" />
-              <label for="frites">Frites</label>
-              <br />
-              <input type="checkbox" name="steak" id="steak" />
-              <label for="Steak">Steak</label>
-              <br />
-              <input type="checkbox" name="Salades" id="Salades" />
-              <label for="salades">salades</label>
-              <br />
-              <input type="checkbox" name="humberger" id="humberger" />
-              <label for="humberger">humberger</label>
-              <br />
-              <input type="checkbox" name="humhuitres" id="humhuitres" />
-              <label for="huitres">huitres</label><br />
-            </p>
-          </form>
-        </div>
-      </section>
-      <section>
-        <h3>LES ZONES D'OPTIONS</h3>
+      <div>
+        <form method="post" action="traitement.php">
+          <p>
+            Cochez les aliments que vous souhaiteriez manger : <br />
+            <input type="checkbox" name="frites" id="frites" />
+            <label for="frites">Frites</label>
+            <br />
+            <input type="checkbox" name="steak" id="steak" />
+            <label for="Steak">Steak</label>
+            <br />
+            <input type="checkbox" name="salades" id="Salades" />
+            <label for="salades">salades</label>
+            <br />
+            <input type="checkbox" name="humberger" id="humberger" />
+            <label for="humberger">humberger</label>
+            <br />
+            <input type="checkbox" name="huitres" id="huitres" />
+            <label for="huitres">huitres</label><br />
+          </p>
+        </form>
+      </div>
+    </section>
+    <section>
+      <h3>Zones d'options</h3>
 
-        <div>
-          <form method="post" action="traitement.php">
-            <p>
-              <input type="radio" name="age" value="moins15" id="moins15" />
-              <label for="moins15">Moins de 15 ans</label>
-              <br />
-              <input
-                type="radio"
-                name="age"
-                value="medium15-25"
-                id="medium15-25"
-              />
-              <label for="medium15-25">15-25ans</label>
-              <br />
-              <input
-                type="radio"
-                name="age"
-                value="medium25-35"
-                id="medium25-35"
-              />
-              <label for="medium25-35">25-35ans</label>
-              <br />
-              <input
-                type="radio"
-                name="age"
-                value="medium35-45"
-                id="medium35-45"
-              />
-              <label for="medium35-45">35-45ans</label>
-              <br />
-              <input
-                type="radio"
-                name="age"
-                value="medium45-55"
-                id="medium45-55"
-              />
-              <label for="medium45-55">45-55ans</label>
-              <br />
-              <input type="radio" name="age" value="Plus50" id="Plus50" />
-              <label for="Plus50">Encore plus vieux que ça?!</label>
-              <br />
-            </p>
-          </form>
-        </div>
-      </section>
-    </header>
+      <div>
+        <form method="post" action="traitement.php">
+          <p>
+            Veillez indiquer la tranche d'age dans laquelle vous vous situez :
+            <br />
+            <input type="radio" name="age" value="moins15" id="moins15" />
+            <label for="moins15">Moins de 15 ans</label>
+            <br />
+            <input
+              type="radio"
+              name="age"
+              value="medium15-25"
+              id="medium15-25"
+            />
+            <label for="medium15-25">15-25ans</label>
+            <br />
+            <input
+              type="radio"
+              name="age"
+              value="medium25-35"
+              id="medium25-35"
+            />
+            <label for="medium25-35">25-35ans</label>
+            <br />
+            <input
+              type="radio"
+              name="age"
+              value="medium35-45"
+              id="medium35-45"
+            />
+            <label for="medium35-45">35-45ans</label>
+            <br />
+            <input
+              type="radio"
+              name="age"
+              value="medium45-55"
+              id="medium45-55"
+            />
+            <label for="medium45-55">45-55ans</label>
+            <br />
+            <input type="radio" name="age" value="Plus50" id="Plus50" />
+            <label for="Plus50">Encore plus vieux que ça?!</label>
+            <br />
+          </p>
+          <p>
+            Sur quel continent habitez-Vous? <br />
+            <input
+              type="radio"
+              name="continent"
+              value="europe"
+              id="europe"
+            /><label for="europe">Europe</label>
+            <br />
+            <input
+              type="radio"
+              name="continent"
+              value="Afrique"
+              id="Afrique"
+            /><label for="Afrique">Afrique</label>
+            <br />
+            <input
+              type="radio"
+              name="continent"
+              value="Amerique"
+              id="Amerique"
+            /><label for="Amerique">Amérique</label>
+            <br />
+            <input type="radio" name="continent" value="Asie" id="Asie" /><label
+              for="Asie"
+              >Asie</label
+            >
+            <br />
+            <input
+              type="radio"
+              name="continent"
+              value="australie"
+              id="australie"
+            /><label for="australie">Australie</label>
+            <br />
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h3>Listes déroulantes</h3>
+
+        <form method="post" action="traitement.php">
+          <p>
+            <label for="pays">Dans quel pays habitez-Vous?</label><br />
+            <select name="pays" id="pays">
+              <option value="france">FRANCE</option>
+              <option value="italie">ITALIE</option>
+              <option value="espagne">ESPAGNE</option>
+              <option value="mexique">MEXIQUE</option>
+              <option value="canada">CANADA</option>
+              <option value="royaume-uni">ROYAUME-UNI</option>
+              <option value="suisse">SUISSE</option>
+              <option value="chine">CHINE</option>
+              <option value="etats-unis">ETATS-UNIS</option>
+              <option value="japon">JAPON</option>
+            </select>
+          </p>
+          <p>
+            <!-- regrouper les options -->
+            <label for="pays">Dans quel pays habitez-Vous?</label><br />
+            <select name="pays" id="pays">
+              <optgroup label="EUROPE">
+                <option value="france">FRANCE</option>
+                <option value="italie">ITALIE</option>
+                <option value="espagne">ESPAGNE</option>
+                <option value="suisse">SUISSE</option>
+              </optgroup>
+              <optgroup label="AMERIQUE">
+                <option value="mexique">MEXIQUE</option>
+                <option value="canada">CANADA</option>
+                <option value="royaume-uni">ROYAUME-UNI</option>
+                <option value="etats-unis">ETATS-UNIS</option>
+              </optgroup>
+              <optgroup label="ASIE">
+                <option value="japon">JAPON</option>
+                <option value="chine">CHINE</option>
+              </optgroup>
+            </select>
+          </p>
+        </form>
+      </div>
+    </section>
+   
   </body>
 </html>
