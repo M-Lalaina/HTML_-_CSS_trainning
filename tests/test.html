@@ -1,208 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>test</title>
     <link rel="stylesheet" href="test.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <div><em><strong style="font-size: 1.3em;">""...HTML & CSS trainning project..."</strong></em>
+        <div>"...HTML & CSS trainning project..."</div>
         <nav>
-          <ul>
-            <li><a href="#">Acceuil</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-      </div>
-      </nav>
+            <ul>
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section>
-      <div>
-        <p id="p1">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem dignissimos quasi iure optio quis, at a illo. Sit quae
-          natus molestiae illum cupiditate, quia asperiores tenetur veritatis,
-          quidem accusantium aperiam distinctio nesciunt laborum molestias rem
-          itaque commodi nihil consequatur odit placeat quisquam! Quis aliquid
-          impedit magnam odit, provident veritatis dolore.🔥
-        </p>
-      </div>
-    </section>
-    <section>
-      <div>
-        <video
-          src="Learn CSS Media Query In 7 Minutes.mp4"
-          width="35%"
-          controls
-        ></video>
-      </div>
-    </section>
-
-    <section>
-      <h2>FORMULAIRES</h2>
-
-      <div>
-        <h3>Types : texte/password/e-mail</h3>
-        <!-- type text/password -->
-        <form method="post" action="traitement.php">
-          <p>
-            <label for="pseudo"> Votre Pseudo : </label>
-            <input
-              type="text"
-              name="pseudo"
-              id="pseudo"
-              placeholder="Ex: M@teo21"
-            />
-            <br />
-            <br />
-
-            <label for="pass">Votre Mot De Passe : </label>
-            <input type="password" name="pass" id="pass" placeholder="****" />
-            <br />
-            <br />
-
-            <label for="e_mail">Votre Adresse e-mail</label>
-            <input
-              type="e-mail"
-              name="e_mail"
-              id="e_mail"
-              placeholder="mateo@gmail.com"
-            />
-          </p>
-        </form>
-      </div>
-
-      <div>
-        <h3>Une URL</h3>
-        <!-- type URL -->
-        <form method="post" action="traitement.php">
-          <p>
-            <label for="url">Entrez ici l'URL : </label>
-            <input
-              type="url"
-              name="url"
-              id="url"
-              placeholder="https//www.google.com"
-            />
-          </p>
-        </form>
-      </div>
-
-      <div>
-        <h3>Un numéro de téléphone</h3>
-        <!-- un numéro de téléphone -->
-        <form method="post" action="traitement.php">
-          <p>
-            <label for="téléphone">Votre n° de téléphone</label>
-            <input
-              type="tel"
-              name="tel"
-              id="tel"
-              placeholder="+261 34 44 206 01"
-            />
-          </p>
-        </form>
-      </div>
-
-      <div>
-        <h3>Un Nombre</h3>
-        <!-- un nombre -->
-        <form method="post" action="traitement.php">
-          <p>
-            <label for="age">Votre âge</label>
-            <input
-              type="number"
-              name="number"
-              id="number"
-              min="18"
-              max="60"
-              step="1"
-              placeholder="18"
-            />
-          </p>
-        </form>
-      </div>
-
-      <div>
-        <h3>Un Curseur</h3>
-        <!-- Permet de selectionner un nombre avec un curseur -->
-        <form method="post" action="traitement.php">
-          <p>
-            <label for="curseur"></label>
-            <input
-              type="range"
-              name="range"
-              id="range"
-              min="10"
-              max="100"
-              step="1"
-            />
-          </p>
-        </form>
-      </div>
-
-      <div>
-        <h3>Des couleurs</h3>
-        <!-- type couleur-->
-        <form method="post" action="traitement.php">
-          <p>
-            <label for="color">Votre couleur préféré</label>
-            <input type="color" name="color" id="color" />
-          </p>
-        </form>
-      </div>
-
-      <div>
-        <h3>
-          Dates/heures/semaines/mois/ date et heure avec gestion du décalage
-          horaire/ date et heure sans gestion
-        </h3>
-        <!-- type Date ( datetime(avec gestion) # datetime-local(sans gestion))-->
-        <form method="post" action="traitement.php">
-          <p>
-            <label for="Date">Date d'aujourd'hui</label>
-            <input type="date" name="date" id="date" />
-            <br />
-            <br />
-            <label for="time">L'heure</label>
-            <input type="time" name="time" id="time" />
-            <br />
-            <br />
-            <label for="week">La semaine</label>
-            <input type="week" name="week" id="week" />
-            <br />
-            <br />
-            <label for="month">Le mois</label>
-            <input type="month" name="month" id="month" />
-            <br />
-            <br />
-            <label for="datetime">"Datetime"</label>
-            <input type="datetime" name="datetime" id="datetime" />
-            <br />
-            <br />
-            <label for="datetime-local">"Datetime-Local"</label>
-            <input
-              type="datetime-local"
-              name="datetime-local"
-              id="datetime-local"
-            />
-          </p>
-        </form>
-      </div>
-      <div>
         <div>
-          <h3>Zone de texte</h3>
-          <!-- text area -->
-          <form method="post" action="traitement.php">
-            <p>
-              <em><b>Comment améliorer mon site???</b></em>
+            <p id="p1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos quasi iure optio quis, at a illo. Sit quae natus molestiae illum cupiditate, quia asperiores tenetur veritatis, quidem accusantium aperiam distinctio nesciunt laborum
+                molestias rem itaque commodi nihil consequatur odit placeat quisquam! Quis aliquid impedit magnam odit, provident veritatis dolore.🔥
             </p>
-            <p>
-              <textarea name="améliorer" id="améliorer" cols="50" rows="10">
+        </div>
+    </section>
+    <section>
+        <div>
+            <video src="Learn CSS Media Query In 7 Minutes.mp4" width="35%" controls></video>
+        </div>
+    </section>
+
+    <section>
+        <h2>FORMULAIRES</h2>
+
+        <div>
+            <h3>Types : texte/password/e-mail</h3>
+            <!-- type text/password -->
+            <form method="post" action="traitement.php">
+                <p>
+                    <label for="pseudo"> Votre Pseudo : </label>
+                    <input type="text" name="pseudo" id="pseudo" placeholder="Ex: M@teo21" />
+                    <br />
+                    <br />
+
+                    <label for="pass">Votre Mot De Passe : </label>
+                    <input type="password" name="pass" id="pass" placeholder="****" />
+                    <br />
+                    <br />
+
+                    <label for="e_mail">Votre Adresse e-mail</label>
+                    <input type="e-mail" name="e_mail" id="e_mail" placeholder="mateo@gmail.com" />
+                </p>
+            </form>
+        </div>
+
+        <div>
+            <h3>Une URL</h3>
+            <!-- type URL -->
+            <form method="post" action="traitement.php">
+                <p>
+                    <label for="url">Entrez ici l'URL : </label>
+                    <input type="url" name="url" id="url" placeholder="https//www.google.com" />
+                </p>
+            </form>
+        </div>
+
+        <div>
+            <h3>Un numéro de téléphone</h3>
+            <!-- un numéro de téléphone -->
+            <form method="post" action="traitement.php">
+                <p>
+                    <label for="téléphone">Votre n° de téléphone</label>
+                    <input type="tel" name="tel" id="tel" placeholder="+261 34 44 206 01" />
+                </p>
+            </form>
+        </div>
+
+        <div>
+            <h3>Un Nombre</h3>
+            <!-- un nombre -->
+            <form method="post" action="traitement.php">
+                <p>
+                    <label for="age">Votre âge</label>
+                    <input type="number" name="number" id="number" min="18" max="60" step="1" placeholder="18" />
+                </p>
+            </form>
+        </div>
+
+        <div>
+            <h3>Un Curseur</h3>
+            <!-- Permet de selectionner un nombre avec un curseur -->
+            <form method="post" action="traitement.php">
+                <p>
+                    <label for="curseur"></label>
+                    <input type="range" name="range" id="range" min="10" max="100" step="1" />
+                </p>
+            </form>
+        </div>
+
+        <div>
+            <h3>Des couleurs</h3>
+            <!-- type couleur-->
+            <form method="post" action="traitement.php">
+                <p>
+                    <label for="color">Votre couleur préféré</label>
+                    <input type="color" name="color" id="color" />
+                </p>
+            </form>
+        </div>
+
+        <div>
+            <h3>
+                Dates/heures/semaines/mois/ date et heure avec gestion du décalage horaire/ date et heure sans gestion
+            </h3>
+            <!-- type Date ( datetime(avec gestion) # datetime-local(sans gestion))-->
+            <form method="post" action="traitement.php">
+                <p>
+                    <label for="Date">Date d'aujourd'hui</label>
+                    <input type="date" name="date" id="date" />
+                    <br />
+                    <br />
+                    <label for="time">L'heure</label>
+                    <input type="time" name="time" id="time" />
+                    <br />
+                    <br />
+                    <label for="week">La semaine</label>
+                    <input type="week" name="week" id="week" />
+                    <br />
+                    <br />
+                    <label for="month">Le mois</label>
+                    <input type="month" name="month" id="month" />
+                    <br />
+                    <br />
+                    <label for="datetime">"Datetime"</label>
+                    <input type="datetime" name="datetime" id="datetime" />
+                    <br />
+                    <br />
+                    <label for="datetime-local">"Datetime-Local"</label>
+                    <input type="datetime-local" name="datetime-local" id="datetime-local" />
+                </p>
+            </form>
+        </div>
+        <div>
+            <div>
+                <h3>Zone de texte</h3>
+                <!-- text area -->
+                <form method="post" action="traitement.php">
+                    <p>
+                        <em><b>Comment améliorer mon site???</b></em>
+                    </p>
+                    <p>
+                        <textarea name="améliorer" id="améliorer" cols="50" rows="10">
 Dites moi ici vos commentaire pour améliorer mon site...</textarea
               >
             </p>
@@ -437,32 +390,32 @@ Dites moi ici vos commentaire pour améliorer mon site...</textarea
                 cols="50"
                 rows="5"
               ></textarea>
-            </p>
-          </fieldset>
-        </form>
-      </div>
+                    </p>
+                    </fieldset>
+                </form>
+            </div>
 
-      <div>
-        <h3>RQ1 : on peut selectionner automatiquement un champ</h3>
-        <p>
-          pour cela on ajoute simplement l'attribut "autofocus"dans l'un des
-          champs
-        </p>
-      </div>
+            <div>
+                <h3>RQ1 : on peut selectionner automatiquement un champ</h3>
+                <p>
+                    pour cela on ajoute simplement l'attribut "autofocus"dans l'un des champs
+                </p>
+            </div>
 
-      <div>
-        <h3>RQ2 : Rendre un champ obligatoire</h3>
-        <p>utiliser l'attribut "required".</p>
-      </div>
+            <div>
+                <h3>RQ2 : Rendre un champ obligatoire</h3>
+                <p>utiliser l'attribut "required".</p>
+            </div>
 
-      <div>
-        <h3>Bouton d'envoi</h3>
-        <form method="post" action="traitement.php">
-          <p>
-            <input type="submit" value="Envoyer" />
-          </p>
-        </form>
-      </div>
+            <div>
+                <h3>Bouton d'envoi</h3>
+                <form method="post" action="traitement.php">
+                    <p>
+                        <input type="submit" value="Envoyer" />
+                    </p>
+                </form>
+            </div>
     </section>
-  </body>
+</body>
+
 </html>
