@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.marge {
+    padding: 0 15%;
+}
+
+section.section_1st {
+    height: 100vh;
+    background-image: linear-gradient( to right top, #6364fc, #0087ff, #009fff, #00b2f1, #27c1de);
+}
+
+button {
+    width: 90%;
+}
+
+.cards {
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px;
+    padding: 15% 2%;
+    background: #fff;
+    text-align: center;
+}
